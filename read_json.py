@@ -8,20 +8,9 @@ def dataP():
         data = json.loads(json_data)
         print(data)
         file.close()
-    except(FileNotFoundError):
+    except:
         print("Ocurreu um erro! ")
     finally:
         print("Processo concluido! ")
 
-
-
-
 dataP()
-
-'''
-def andar(posição_atual, posição_antiga ):
-
-    posição_defenida= posição_atual + posição_antiga 
-    print (posição_defenida)
-
-andar(2, 3)'''
